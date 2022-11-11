@@ -1,0 +1,5 @@
+- id: strip-boto-data
+  name: Strip Boto Data
+  description: Strips any un-used boto3 services from the build.
+  entry: strip-boto-data
+  language: python
