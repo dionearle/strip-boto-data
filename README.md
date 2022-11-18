@@ -10,7 +10,7 @@ repos:
     rev: 1.0.1
     hooks:
       - id: strip-boto-data
-      - args: ['s3'] # Optional: If you want to manually specify additional boto3 services to include, add them here
+        args: [s3, sqs] # Optional: If you want to manually specify additional boto3 services to include, add them here
 ```
 
 as well as updating your `serverless.yml` to include the following:
