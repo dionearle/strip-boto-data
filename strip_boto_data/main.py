@@ -24,7 +24,7 @@ def main():
     import_str = "|".join(list(dict.fromkeys(boto_imports)))
 
     with open("cloudformation/strip_boto_pattern.yml", "w") as f:
-        f.write(f"botocore/data/!({import_str})")
+        f.write(f"botocore/data/!({import_str})\n")
 
 
 if __name__ == "__main__":
